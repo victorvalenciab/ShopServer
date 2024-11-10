@@ -1,0 +1,146 @@
+:root {
+    --color-blanco: #fff;
+  }
+  
+  header {
+    background-image: url('/public/resource/img/backgroud-night.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  
+  .Marca {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Esto permite que los elementos se ajusten en dispositivos más pequeños */
+  }
+  
+  .Marca .navegation {
+    padding-left: 650px;
+    justify-content: space-between;
+  }
+  
+  .Marca img {
+    margin-right: 10px;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .Marca h1 {
+    margin: 0;
+    font-size: 45px;
+    color: var(--color-blanco);
+  }
+  
+  .Marca a {
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    color: var(--color-blanco);
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  .link {
+    cursor: pointer;
+  }
+  
+  .header-title img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header-title h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header-title p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .card-body ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card-body li {
+    margin: 5px 0;
+  }
+  
+  .btn-shop {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Responsive Adjustments */
+  
+  /* Tablets (width <= 768px) */
+  @media (max-width: 768px) {
+    .Marca {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .Marca .navegation {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .Marca h1 {
+      font-size: 35px;
+    }
+  
+    .Marca a {
+      margin-top: 10px;
+    }
+  
+    .header-title h3 {
+      font-size: 20px;
+    }
+  
+    .header-title p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Mobile (width <= 480px) */
+  @media (max-width: 480px) {
+    .Marca h1 {
+      font-size: 25px;
+    }
+  
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .Marca a {
+      padding: 6px 10px;
+      font-size: 14px;
+    }
+  
+    .header-title h3 {
+      font-size: 18px;
+    }
+  
+    .header-title p {
+      font-size: 12px;
+    }
+  }
+  
